@@ -1,6 +1,8 @@
 # tests/test_ocr.py
 
-import os
+import sys 
+import os 
+sys.path.append(os.path.dirname(os.getcwd()))
 from scripts import ocr_utils
 
 def test_preprocess_image():

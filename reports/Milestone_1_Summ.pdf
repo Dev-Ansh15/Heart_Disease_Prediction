@@ -1,0 +1,66 @@
+Milestone 1 Summary Report
+
+Project: Heart Disease Prediction – Milestone 1
+Prepared by: Intern 
+
+Objective
+
+To establish a complete data pipeline integrating cleaning, OCR-based feature extraction, feature engineering, and data splitting, ensuring readiness for model training.
+
+Completed Tasks
+
+Data Cleaning
+
+Missing value imputation (KNN for numeric, mode for categorical)
+
+Outlier handling with IQR capping
+
+Standardized boolean and categorical data
+
+OCR Integration
+
+Preprocessed patient images
+
+Extracted medical values (BP, cholesterol)
+
+Parsed and appended values to dataset
+
+Feature Engineering
+
+Derived features: BMI, age group, risk score
+
+Encoded categorical variables
+
+Applied scaling: normalization and standardization
+
+Optional feature selection for model readiness
+
+Data Splitting
+
+Stratified train-validation-test split (70%-15%-15%)
+
+Ensured balanced target distribution
+
+Validated data integrity across splits
+
+Validation & QA
+
+Checked for missing values and NaNs
+
+Verified target distribution consistency
+
+Confirmed total samples match original dataset
+
+Generated dataset summary statistics
+
+Deliverables Prepared
+
+Final datasets in data/final/
+
+Integrated pipeline scripts: pipeline.py, data_split.py
+
+Comprehensive documentation: docs/
+
+Visualization outputs: visuals/
+
+Milestone summary report

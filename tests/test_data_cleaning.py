@@ -1,7 +1,9 @@
 import pandas as pd
 import numpy as np
 import pytest
-from scripts.data_cleaning import clean_dataset, detect_outliers
+import sys, os
+sys.path.append("..")
+from scripts.data_cleaning import (clean_dataset, detect_outliers)
 
 @pytest.fixture
 def sample_raw_data():

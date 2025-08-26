@@ -29,7 +29,7 @@ def clean_dataset(df: pd.DataFrame) -> pd.DataFrame:
     # Fill categorical missing values with mode
     cat_cols = df.select_dtypes(exclude=np.number).columns
     for col in cat_cols:
-        df[col] = df[col].fillna(df[col].mode()[0])
+        df[col] = df[col].fillna(df[col].mode()[0]).infer_objects(copy=False)
 
     # Handle outliers - capping with IQR limits
     for col in num_cols:
