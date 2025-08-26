@@ -1,0 +1,31 @@
+Data Cleaning Report – Heart Disease UCI Dataset
+
+Initial Dataset Size: 303 rows × 15 columns
+
+Missing Values:
+
+Cholesterol: 3 missing → imputed
+
+Thal: 2 missing → imputed
+
+Outliers Detected:
+
+Cholesterol: 12 outliers capped
+
+Resting BP: 5 outliers capped
+
+Consistency Fixes:
+
+Converted TRUE/FALSE → 1/0
+
+Normalized categorical labels (e.g., lv hypertrophy, normal)
+
+Validation:
+
+Post-cleaning dataset has 0 missing values
+
+Outliers handled without row deletion
+
+Data distribution preserved
+
+Final Dataset Size: 303 rows × 15 columns

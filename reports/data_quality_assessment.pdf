@@ -1,0 +1,20 @@
+# Initial Data Quality Assessment
+
+### Missing Values
+- No missing values detected in dataset.
+
+### Outliers
+- `chol` (serum cholesterol): extreme values > 500 → unlikely in real patients.  
+- `trestbps` (blood pressure): some values > 200 mmHg.  
+- `oldpeak`: values > 5 are rare.
+
+### Categorical Consistency
+- `sex`: consistent (Male/Female)  
+- `cp`: valid categories (typical angina, atypical angina, etc.)  
+- `thal`: “reversable defect” misspelling → should be corrected to “reversible defect”.
+
+### Target Variable
+- `num` has imbalance: majority in class 0 and 1–2, fewer in 3–4.  
+- Consider converting to **binary classification** (0 = no disease, 1 = disease present).  
+
+---

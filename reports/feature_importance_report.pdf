@@ -1,0 +1,22 @@
+Feature Importance Analysis (Day 5)
+===================================
+
+Top 10 Important Features (RandomForest):
+1. age
+2. risk_score
+3. trestbps
+4. chol
+5. thalach
+6. oldpeak
+7. cp_1
+8. cp_2
+9. sex_1
+10. slope_2
+
+Statistical Validation:
+- Chi-Square test confirmed cp, thal, and slope as significant predictors (p < 0.05).
+- Age groups and BMI showed moderate predictive power.
+
+Conclusion:
+- Engineered features like BMI and risk_score improved model interpretability.
+- Final dataset ready for Day 6 splitting and testing.
